@@ -8,10 +8,9 @@ excerpt:
 tags: [snippets, R, rmarkdown]
 ---
 
-The generic Simulated Annealing algorithm, adapted from [Yong Wang](https://www.stat.auckland.ac.nz/~yongwang/)'s slide:
+This is just a test to post code & math fonts. The Simulated Annealing algorithm below is written using R (generated with Rmd from RStudio package). The generic implementation is given below:
 
 {% gist avansp/aad59611a6bb13f19068 SimulatedAnnealing.R %}
-
 
 Let $$k$$ random points representing cities generated from uniform random distributions on $$(0,1)^2$$. Distances between cities are measured using the Euclidean distance.
 
