@@ -1,7 +1,26 @@
-highlighter: pygments
-github: [Repository metadata]
-timezone: Pacific/Auckland
-title: Avan Suinesiaputra
-github_username: avansp
-description:
-  A personal blog of Avan Suinesiaputra.
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
+markdown:            kramdown
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               avansp
+tagline:             '@github.io'
+description:         'Sharing my notes...'
+url:                 http://avansp.github.io
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              Avan Suinesiaputra
+  url:               http://avansp.github.io
+  email:             avansp@gmail.com
+
+# Custom vars

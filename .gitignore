@@ -1,2 +1,7 @@
 _site/**
 .sass-cache/**
+Gemfile
+Gemfile.lock
+package.json
+Gruntfile.js
+.theme_help/**
