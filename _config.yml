@@ -1,5 +1,5 @@
 # Dependencies
-markdown:            redcarpet
+#markdown:            redcarpet
 highlighter:         pygments
 markdown:            kramdown
 
@@ -22,5 +22,7 @@ author:
   name:              Avan Suinesiaputra
   url:               http://avansp.github.io
   email:             avansp@gmail.com
+  github:            avansp
+  disqus-shortname:  avan
 
 # Custom vars
