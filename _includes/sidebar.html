@@ -5,7 +5,11 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+{% if site.author.avatar != null %}
+  <img src="{{ base.url }}/images/{{ site.author.avatar }}" class="bio-photo" alt="{{ site.author.name }} photo">
+{% else %}
+  <p>{{ site.description }}</p>
+{% endif %}
   </div>
 
   <nav class="sidebar-nav">

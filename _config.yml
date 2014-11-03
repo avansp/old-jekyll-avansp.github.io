@@ -10,9 +10,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               avansp
-tagline:             '@github.io'
-description:         'Sharing my notes...'
+title:               avan
+tagline:             'is scribbling about his research life'
+description:         'just my notes'
 url:                 http://avansp.github.io
 baseurl:             /
 paginate:            5
@@ -23,6 +23,8 @@ author:
   url:               http://avansp.github.io
   email:             avansp@gmail.com
   github:            avansp
-  disqus-shortname:  avan
+  disqus-shortname:  Avan
+  avatar:            bio-photo.jpg
 
 # Custom vars
+404image:            homerMRI.jpg

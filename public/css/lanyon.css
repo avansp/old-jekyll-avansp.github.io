@@ -138,6 +138,16 @@ h1, h2, h3, h4, h5, h6 {
  *
  * Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
  */
+.bio-photo {
+  max-width: 150px;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+  transform: scale(0.8);
+}
+
+.bio-photo:hover {
+  transform: scale(.9);
+}
 
 /* Style and "hide" the sidebar */
 .sidebar {
@@ -154,6 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #202020;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
+
 }
 @media (min-width: 30em) {
   .sidebar {
@@ -192,7 +203,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .sidebar-item {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   .sidebar-nav-item {
     padding-left:  1.5rem;

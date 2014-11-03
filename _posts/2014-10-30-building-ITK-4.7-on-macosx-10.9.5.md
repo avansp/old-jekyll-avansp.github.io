@@ -35,7 +35,7 @@ Other settings are
 
 * `CMAKE_INSTALL_PREFIX`. Make sure it does not install directly to `/usr/local/` folder by default.
 
-* `ITKVideoBridgeOpenCV` module enabled to link [ITK][itk] with [OpenCV][openCV].
+* <del>`ITKVideoBridgeOpenCV` module enabled to link [ITK][itk] with [OpenCV][openCV].</del>
 
 Okay, give it a go!
 
