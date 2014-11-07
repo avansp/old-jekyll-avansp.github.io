@@ -9,7 +9,7 @@ My name is Avan Suinesiaputra, currently a researcher in medical imaging. My pro
 
 I'm keeping my digital social interaction to the bare minimum, so I don't have a Twitter, Facebook, LinkedIn or any other social media site account. Best to contact me via e-mail.
 
-Unless explicitly stated, all contents in this site are licensed under [CC BY-NC-SA 4.0][lic]. If you like the design of this blog, you can fork or clone this site from [my github page](https://github.com/avansp/avansp.github.io).
+Unless explicitly stated, all contents in this site are licensed under [CC BY-NC-SA 4.0][lic]. This blog is designed for reading pleasure. If you like the design of this blog, you can fork or clone this site from [my github page](https://github.com/avansp/avansp.github.io).
 
 [avan-uoa]: http://unidirectory.auckland.ac.nz/profile/a-suinesiaputra
 [avan-gscholar]: http://scholar.google.co.nz/citations?user=av3jfhgAAAAJ&hl=en

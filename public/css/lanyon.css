@@ -562,3 +562,32 @@ a.pagination-item:hover {
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
+
+/*
+ * Social media icons
+ */
+.footer-social-icons {
+	width: 100%;
+	display:block;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.social-icon {
+	color: #fff;
+}
+
+ul.social-icons {
+	margin-top: 10px;
+}
+
+.social-icons li {
+	vertical-align: top;
+	display: inline;
+  margin: 5px;
+}
+
+.social-icons a {
+	color: #fff;
+	text-decoration: none;
+}

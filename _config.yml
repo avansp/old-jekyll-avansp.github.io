@@ -10,9 +10,10 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
+name:                Avan's Blog
 title:               avan
 tagline:             'is scribbling about his research life'
-description:         'just my notes'
+description:         Notes on medical imaging, statistics and coding from Avan's research life
 url:                 http://avansp.github.io
 baseurl:             /
 paginate:            5
@@ -25,6 +26,7 @@ author:
   github:            avansp
   disqus-shortname:  Avan
   avatar:            bio-photo.jpg
+  googleplus:        104904508082327305960
 
 # Custom vars
 404image:            homerMRI.jpg

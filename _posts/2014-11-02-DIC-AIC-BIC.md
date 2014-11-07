@@ -38,6 +38,8 @@ Hence, BIC is more stringent than AIC for larger sample size, as the penalty inc
 
 Now, how big is the BIC penalty term compared to AIC?
 
+{% gist avansp/d3bcb6da7da98d47e71b AIC_vs_BIC.r %}
+
 ![AIC vs BIC penalty terms]({{ base.url }}/images/bic_vs_aic.png)
 
 The BIC penalty dramatically increases with only a few number of samples. BIC becomes larger than AIC when the sample size is $$n > \exp(2)$$ or $$n > 7$$ (dotted horizontal line).
