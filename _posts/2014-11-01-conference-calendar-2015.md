@@ -10,6 +10,7 @@ Listing here are specific to medical image analysis, cardiac image analysis, car
 
 | **When** | **Name** | **Where** | **Deadline**
 | 4-7 February | [SCMR/EuroCMR][SCMR] | Nice, France | <del>15/10/2014</del>
+| 8-10 April | [Cardiac Physiome Workshop][CPW] | Auckland, NZ | 01/02/2015
 | 16-19 April | [Intl Symposium on Biomedical Imaging][ISBI] | New York, USA | 10/11/2014
 | 8-10 June | [Computer Vision and Pattern Recognition][CVPR] | Boston, USA | 14/11/2014
 | 25-27 June | [Functional Imaging and Modeling of the Heart][FIMH] | Maastricht, NL | 18/01/2015
@@ -32,5 +33,6 @@ Listing here are specific to medical image analysis, cardiac image analysis, car
 [CVPR]: http://www.pamitc.org/cvpr15/
 [KDD]: http://www.kdd.org/kdd2015/
 [ICCV]: http://pamitc.org/iccv15/
+[CPW]: http://cardiacphysiome.org/meetings/2015-meeting/
 
 More extended list is given by the [visionbib](http://conferences.visionbib.com/Browse-data.php?year=2015) site.
