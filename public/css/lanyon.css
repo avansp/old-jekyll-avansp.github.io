@@ -591,3 +591,12 @@ ul.social-icons {
 	color: #fff;
 	text-decoration: none;
 }
+
+
+/*
+ * CUSTOM
+ */
+ .courtesy {
+   font-size: 80%;
+   text-align: right;
+ }
