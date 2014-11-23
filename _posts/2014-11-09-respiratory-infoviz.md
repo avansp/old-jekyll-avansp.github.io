@@ -10,8 +10,7 @@ We know infographic is a beautiful way to present tons of (statistical) informat
 
 Three different respiratory systems: human, bird and grasshopper:
 
-![Respiratory Systems]({{ base.url }}/images/resp_infoviz.gif)
-\[[source](http://tabletopwhale.com/2014/10/24/3-different-ways-to-breathe.html)\]
+[![Respiratory Systems]({{ base.url }}/images/resp_infoviz.gif)](http://tabletopwhale.com/2014/10/24/3-different-ways-to-breathe.html)
 
 This animation is not just a sequence of image files. This is rendered with good biological knowledge, which gives such a realistic motion. A really nice tool for teaching.
 

@@ -39,10 +39,13 @@
     <div class="footer-social-icons">
 				<ul class="social-icons">
           {% if site.author.github %}
-          <li><a href="http://github.com/{{ site.author.github }}" class="social-icon"> <i class="fa fa-github"></i></a></li>
+          <li><a href="http://github.com/{{ site.author.github }}" class="social-icon"><i class="fa fa-github"></i></a></li>
           {% endif %}
           {% if site.author.googleplus %}
 					<li><a href="http://plus.google.com/{{ site.author.googleplus }}" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+          {% endif %}
+          {% if site.author.twitter %}
+          <li><a href="http://twitter.com/{{ site.author.twitter }}" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
           {% endif %}
 				</ul>
     </div>
