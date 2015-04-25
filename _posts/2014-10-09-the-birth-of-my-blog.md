@@ -3,6 +3,7 @@ layout: post
 title:  "A blog is born"
 date:   2014-10-09
 tags: [en]
+comments: true
 ---
 
 A new adventure in blogging. Locally created using Jekyll and is hosted by GitHub. A geeky way to blog, but I like it. More freedom with a lot of experimental feature opportunities.

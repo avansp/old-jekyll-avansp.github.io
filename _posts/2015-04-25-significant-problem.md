@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stop abusing p-value! It is not a scientific test."
-date:   2015-03-12
+date:   2015-04-25
 tags: [en]
 comments: true
 ---
@@ -24,6 +24,6 @@ They even made this (horrendous) plot
 
 This is completely a misleading statement of statistical significance test. Yes, $$p$$<0.001 is statistically significance, but for the existence of the reported $$R$$ value. It merely means there is a very small probability the $$R$$ value was found by chance. The $$R$$ values themselves are indeed significantly low. It should be the authors' interest - *as a scientist* - to investigate why they were low.
 
-This case appears to be common in many fields. In medicine, psychology and economics, statistical significance has been their idol. Statistical significance has - *as Ziliak and McCoskey said* - cost jobs, justice and lives. Damage has been done, but we need to change. Do you know that [Basic and Applied Social Psychology Journal](http://www.tandfonline.com/toc/hbas20) is now [rejecting papers containing $$p$$-value](http://www.nature.com/news/psychology-journal-bans-p-values-1.17001)?
+This case appears to be common in many fields. In medicine, psychology and economics, statistical significance has been their main goal. Statistical significance has - *as Ziliak and McCoskey said* - cost jobs, justice and lives. Damage has been done, but we need to change. Do you know that [Basic and Applied Social Psychology Journal](http://www.tandfonline.com/toc/hbas20) is now [rejecting papers containing $$p$$-value](http://www.nature.com/news/psychology-journal-bans-p-values-1.17001)?
 
-So let's forget about the $$p$$-value, because science depends on size or magnitude, not just existence. The existence does not have size. Therefore, please, **don't be a sizeless scientist**.
+So do not stop until $$p$$-value, because science depends on size or magnitude, not just existence.
