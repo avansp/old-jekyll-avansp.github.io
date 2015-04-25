@@ -4,6 +4,7 @@ title:  "CMake tricks"
 date:   2015-03-12
 tags: [en]
 excerpt: "Debugging, auto generated variables, option grouping, C++11 compiler check"
+comments: true
 ---
 
 ## Debugging with CMake
