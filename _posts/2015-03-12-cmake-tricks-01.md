@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "CMake tricks series (01)"
+title:  "CMake tricks"
 date:   2015-03-12
 tags: [en]
-excerpt: "Debugging, auto generated variables, option grouping"
+excerpt: "Debugging, auto generated variables, option grouping, C++11 compiler check"
 ---
 
 ## Debugging with CMake
@@ -40,3 +40,19 @@ OPTION( AWESOME_INIT_RAND "Set initial random number seeds", 200 )
 {% endhighlight %}
 
 will group these options under **AWESOME** heading in the `CMake` gui application.
+
+## Checking C++11 compiler
+
+I found this snippets from [Guy Rutenberg](http://www.guyrutenberg.com/2014/01/05/enabling-c11-c0x-in-cmake/) to check C++11 compiler on different platforms:
+{% highlight cmake %}
+include(CheckCXXCompilerFlag)
+CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
+CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
+if( COMPILER_SUPPORTS_CXX11 )
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+elseif( COMPILER_SUPPORTS_CXX0X )
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
+else()
+	message( FATAL "The compiler ${CMAKE_CXX_COMPILER} does not support C++11." )
+endif()
+{% endhighlight %}
