@@ -47,6 +47,12 @@ Update all packages,
 # yum groupinstall "Development tools"
 {% endhighlight %}
 
+Other useful packages
+{% highlight console %}
+# yum install vim
+# yum install man
+{% endhighlight %}
+
 Click VirtualBox VM menu and select Devices -> Insert Guest Additions CD Image ...
 
 In the terminal:
@@ -56,7 +62,7 @@ In the terminal:
 # ./VBoxLinuxAdditions.run
 {% endhighlight %}
 
-Now you can setup a Shared Folder between host & guest VM.
+Now you can setup a Shared Folder between host & guest VM[^1].
 
 Reboot the system.
 
@@ -109,3 +115,5 @@ It is better to attach the new IP address from eth1 to the hostname. Edit `/etc/
 {% highlight bash %}
 192.168.56.102  mynewserver
 {% endhighlight %}
+
+[^1]: If the script returns error, try reboot the system.
