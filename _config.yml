@@ -1,33 +1,52 @@
-# Dependencies
-#markdown:            redcarpet
-highlighter:         pygments
-markdown:            kramdown
+# Site Info
+title:              "Avan's Notes"
+description:        "Avan is scribbling about his research life."
 
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
+# Author Info
+author_name:        "Avan Suinesiaputra"
+author_email:       avansp@gmail.com
 
-# Setup
-name:                Avan's Blog
-title:               avan
-tagline:             'is scribbling about his research life'
-description:         Notes on medical imaging, statistics and coding from Avan's research life
-url:                 http://avansp.github.io
-baseurl:             /
-paginate:            5
+# Site Settings
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /notes/:title # Post permalink
+timezone:           Pacific/Auckland # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# About/contact
-author:
-  name:              Avan Suinesiaputra
-  url:               http://avansp.github.io
-  email:             avansp@gmail.com
-  github:            avansp
-  disqus-shortname:  avanblog
-  avatar:            bio-photo.jpg
-  googleplus:        104904508082327305960
-  twitter:           asui085
+# Site Build
+highlighter:        pygments
+#markdown:           redcarpet
+#redcarpet:
+#    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
 
-# Custom vars
-404image:            homerMRI.jpg
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+
+compress_html:
+    clippings:      all
+    ingore:
+        envs:       [ "test" ]
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"

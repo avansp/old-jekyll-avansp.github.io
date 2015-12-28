@@ -1,12 +1,9 @@
-# README
+# The Plain v1
 
-Just a personal blog site. Powered by Jekyll with  **[Lanyon](https://github.com/poole/lanyon)** theme.
+A minimalist Jekyll theme, made with passion for simplicity by [Heiswayi Nrird](http://heiswayi.github.io). More details about it [**here**](http://heiswayi.github.io/the-plain.html); **theme description**, **screenshot**, **install instructions** and **demo link**.
 
-## Note for running & testing locally
+## Credits
 
-{% highlight bash %}
-$ jekyll serve --watch
-// ==> browse to http://localhost:4000/
-{% endhighlight %}
+This theme is based on Leonard Lamprecht's [Jekyll theme][1] and released under [MIT license](LICENSE).
 
-http://avansp.github.io
+[1]: https://github.com/leo/leo.github.io
