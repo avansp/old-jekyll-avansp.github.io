@@ -11,7 +11,8 @@ One of the CAP servers that I maintain is [XNAT server](http://www.xnat.org). Th
 1. Installing Java SDK 1.7 (the core engine)
 2. Installing PostgreSQL 9.4 (database)
 3. Installing Apache Tomcat 7 (web application server)
-4. Installing XNAT 1.6.5 (the application)
+4. Installing SMTP server (email notification)
+5. Installing XNAT 1.6.5 (the application)
 
 <div class="divider"></div>
 
@@ -80,7 +81,7 @@ CATALINA_OPTS="$CATALINA_OPTS -Xms512m -Xmx1024m -XX:MaxPermSize=256m"
 ([*see here why*](https://wiki.xnat.org/display/XNAT16/Configuring+Tomcat))
 
 Create init file `/etc/init.d/tomcat`
-{% gist avansp/90072e00a818f3a0a83f %}
+{% gist lesstif/f96b2ea2b975b8b16d0e %}
 
 Setup the service
 
@@ -146,6 +147,41 @@ Crete database for XNAT
 {% highlight console %}
 # createdb -U postgres -O xnatuser xnat
 {% endhighlight %}
+
+<div class="divider"></div>
+
+# Installing SMTP server
+
+This is not a required part of XNAT installation but I've found it necessary because XNAT makes use emailing very often, sometimes in an important notification about a process. So I'd recommend to set it up correctly before building the XNAT webapp.
+
+{% highlight console %}
+# yum install sendmail sendmail-cf m4
+# hostname >> /etc/mail/relay-domain
+# m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf
+# chkconfig --add sendmail
+# chkconfig --level 2345 sendmail on
+# service sendmail start
+{% endhighlight %}
+
+The SMTP server uses port 25. To check whether this port is open, you can use telnet:
+{% highlight console %}
+# telnet localhost 25
+{% endhighlight %}
+
+Test sending an email, first create email.txt file that contains:
+{% highlight text %}
+Subject: test email
+
+Hello SMTP.
+{% endhighlight %}
+
+Send it
+{% highlight console %}
+# sendmail -v your@email.address.com << email.txt
+{% endhighlight %}
+
+If all went well, then you can use mail `server=localhost`, `protocol=SMTP` and `port=25`.
+
 
 <div class="divider"></div>
 
