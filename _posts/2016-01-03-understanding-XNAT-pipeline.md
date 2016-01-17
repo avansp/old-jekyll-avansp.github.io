@@ -145,5 +145,25 @@ Then use it as an XPATH expression, e.g.
 </parameter>
 {% endhighlight %}
 
+## The parameters you get
+
+These are parameters that you will automatically have when you run a pipeline:
+{% highlight xml %}
+id           : accession ID (experiment ID)
+host         : URI to your XNAT server
+user         : username that runs the pipeline
+u            : identical with user
+pwd          : user password
+label        : image session label
+project      : project name
+mailhost     : hostname of the mail server
+userfullname : user full name
+builddir     : path to build directory that you can use
+xnatserver   : the title name of your XNAT server
+adminemail   : administrator email address
+useremail    : user email address
+workflowid   : not sure its purpose
+{% endhighlight %}
+
 [^1]: You can store your pipelines in any location as long as the user that runs XNAT -- *usually tomcat* -- owns it.
 [^2]: If you open `PIPELINE_HOME/catalog/pipeline-tools/GenericCommand.xml` you can find that the actual script is located at `PIPELINE_HOME/bin/GenericCommand.sh`
