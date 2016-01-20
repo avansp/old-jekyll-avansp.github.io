@@ -59,6 +59,23 @@ Pipeline:
 </step>
 {% endhighlight %}
 
+## Upload data
+
+Upload a ZIP file using curl and cookie
+{% highlight bash %}
+#!/bin/bash
+user=$1
+password=$2
+host=$3
+project=$4
+file=$5
+
+cookie=`curl -s -k -u $user:$password -X POST $host/data/JSESSION`
+
+curl -k --cookie JSESSIONID=$cookie --form image_archive=@${file} --form project=$project --form inbody=true --form overwrite=delete $host/data/services/import?format=html
+{% endhighlight %}
+
+
 ## Useful links
 
 * [Examples of XDC in XNAT pipelines by John Flavin](https://bitbucket.org/nrg_customizations/)
@@ -66,3 +83,4 @@ Pipeline:
 * [XNAT data model](https://wiki.xnat.org/display/XNAT16/Understanding+the+XNAT+Data+Model)
 * [XNAT schema data model](https://central.xnat.org/schemas/xnat/xnat.xsd)
 * [XNAT REST XML shortcuts](https://wiki.xnat.org/display/XNAT16/XNAT+REST+XML+Path+Shortcuts)
+* [Connecting XNAT & DICOM from BIGR group](http://xnat.bigr.nl/index.php/Xnat:Dicom)
