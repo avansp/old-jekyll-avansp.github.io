@@ -7,9 +7,10 @@ comments: true
 ---
 
 Our lab meeting has this constant theme
-> what does the axis mean ?
 
-Yes, always label your axes
+> what do the axes mean ??
+
+Yes, always ...
 
 ![label your axe](https://i1.wp.com/flowingdata.com/wp-content/uploads/2012/06/label-your-axes.png?zoom=2&fit=500%2C475)
 
