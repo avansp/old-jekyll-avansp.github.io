@@ -1,52 +1,20 @@
-# Site Info
-title:              "Avan's Notes"
-description:        "Avan is scribbling about his research life."
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Author Info
-author_name:        "Avan Suinesiaputra"
-author_email:       avansp@gmail.com
+# Site settings
+title: Avan's Notes
+email: 
+description: > # this means to ignore newlines until "baseurl:"
+  On statistical shape, cardiac modelling, medical image analysis,
+  literate programming, and some amusing things.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://avansp.github.io" # the base hostname & protocol for your site
+twitter_username: asui085
+github_username:  avansp
 
-# Site Settings
-baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
-permalink:          /notes/:title # Post permalink
-timezone:           Pacific/Auckland # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-# Site Build
-highlighter:        pygments
-#markdown:           redcarpet
-#redcarpet:
-#    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
-markdown:           kramdown
-kramdown:
-    input:          GFM
-sass:
-    style:          :compressed
-
-# Other Params
-include:            [ "robots.txt" ]
-exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
-gems:
-  - jekyll-sitemap
-  - jekyll-gist
-
-compress_html:
-    clippings:      all
-    ingore:
-        envs:       [ "test" ]
-
-defaults:
-  -
-    scope:
-      path:         ""
-    values:
-      layout:       "null"
-  -
-    scope:
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      type:         "posts"
-    values:
-      layout:       "post"
+# Build settings
+markdown: kramdown

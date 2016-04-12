@@ -5,3 +5,4 @@ Gemfile.lock
 package.json
 Gruntfile.js
 .theme_help/**
+.DS_Store
