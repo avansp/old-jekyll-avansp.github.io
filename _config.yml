@@ -7,7 +7,7 @@
 
 # Site settings
 title: Avan's Notes
-email: 
+email:
 description: > # this means to ignore newlines until "baseurl:"
   On statistical shape, cardiac modelling, medical image analysis,
   literate programming, and some amusing things.
@@ -18,3 +18,7 @@ github_username:  avansp
 
 # Build settings
 markdown: kramdown
+
+# plugins
+gems:
+  - jekyll-gist
