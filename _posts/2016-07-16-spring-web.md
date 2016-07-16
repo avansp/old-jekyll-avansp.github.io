@@ -149,6 +149,8 @@ $ mvn package
 $ java -jar target/myproject-0.0.1-SNAPSHOT.jar
 ```
 
+* Open [http://localhost:8080](http://localhost:8080/)
+
 <!-- URLs -->
 [Spring]: (http://spring.io/)
 [Spring Boot CLI]: http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/
