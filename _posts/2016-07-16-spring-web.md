@@ -36,7 +36,7 @@ class ThisWillActuallyRun {
 $ [EXTRACTED_SPRING_DIR]/bin/spring run hello.groovy
 ```
 
-* Open your browser and go to http://localhost:8080/ .... tada!!
+* Open your browser and go to [http://localhost:8080/](http://localhost:8080/) .... tada!!
 
 Beautiful.
 
@@ -116,7 +116,7 @@ public class Example {
 $ mvn spring-boot:run
 ```
 
-* Open http://localhost:8080
+* Open [http://localhost:8080](http://localhost:8080/)
 
 Tada!!!
 
