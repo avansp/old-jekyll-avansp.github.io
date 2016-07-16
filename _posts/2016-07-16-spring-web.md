@@ -120,6 +120,35 @@ $ mvn spring-boot:run
 
 Tada!!!
 
+## Create Java JAR
+
+We can modify previous example to output `jar` file, which can be deployed and executed using java directly without maven.
+
+* Add the following build scheme in the `pom.xml` after the `dependencies` block:
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+```
+
+* Build the package
+
+```bash
+$ mvn package
+```
+
+* The jar file is stored in `target` directory. You can run the web server directly:
+
+```bash
+$ java -jar target/myproject-0.0.1-SNAPSHOT.jar
+```
+
 <!-- URLs -->
 [Spring]: (http://spring.io/)
 [Spring Boot CLI]: http://repo.spring.io/release/org/springframework/boot/spring-boot-cli/
