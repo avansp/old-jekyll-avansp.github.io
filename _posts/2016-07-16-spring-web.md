@@ -13,8 +13,11 @@ I've just encountered [Spring], and I am sold. I can quickly create a Java web a
 Here's the quickest, cleanest and shortest Hello World project for a web application, complete with the web server.
 
 * Make sure you have JDK 1.7+ installed.
+
 * Download the latest RELEASE of [Spring Boot CLI] (command-line interface) binary ZIP file, and extract it.
+
 * Create this this text file somewhere:
+
 ```java
 @RestController
 class ThisWillActuallyRun {
@@ -24,11 +27,15 @@ class ThisWillActuallyRun {
     }
 }
 ```
+
   save it as `hello.groovy`.
+
 * Run the spring
+
 ```bash
 $ [EXTRACTED_SPRING_DIR]/bin/spring run hello.groovy
 ```
+
 * Open your browser and go to http://localhost:8080/ .... tada!!
 
 Beautiful.
@@ -37,7 +44,7 @@ Beautiful.
 
 The same hello world web app but using Maven:
 
-1. Create initial `pom.xml` file for spring-boot:
+* Create initial `pom.xml` file for spring-boot:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -60,7 +67,7 @@ The same hello world web app but using Maven:
 </project>
 ```
 
-1. Add web application dependency
+* Add web application dependency
 
 ```xml
 <dependencies>
@@ -71,15 +78,15 @@ The same hello world web app but using Maven:
 </dependencies>
 ```
 
-1. Run initial maven dependency
+* Run initial maven dependency
 
 ```bash
 $ mvn dependency:tree
 ```
 
-1. Create source directory `src/main/java`
+* Create source directory `src/main/java`
 
-1. Create `Example` class
+* Create `Example` class
 
 ```java
 import org.springframework.boot.SpringApplication;
@@ -103,13 +110,13 @@ public class Example {
 }
 ```
 
-1. Call maven to run spring
+* Call maven to run spring
 
 ```bash
 $ mvn spring-boot:run
 ```
 
-1. Open http://localhost:8080
+* Open http://localhost:8080
 
 Tada!!!
 
